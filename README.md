@@ -18,5 +18,5 @@ The design medium is **HTML/CSS/JS** — these are prototypes, not production co
 
 ## Bundle contents
 
-- `prezentacja-projektu-naukowo-wdro-eniowego/README.md` — this file
-- `prezentacja-projektu-naukowo-wdro-eniowego/project/` — the `Prezentacja projektu naukowo-wdrożeniowego` project files (HTML prototypes, assets, components)
+- `prezentacja-projektu-naukowo-wdrozeniowego/README.md` — this file
+- `prezentacja-projektu-naukowo-wdrozeniowego/project/` — the `Prezentacja projektu naukowo-wdrożeniowego` project files (HTML prototypes, assets, components)
