@@ -1,0 +1,89 @@
+/* ============================================================
+   TYPOGRAPHY
+   IBM Plex Sans  — headings 600/700, body 400/500
+   IBM Plex Mono  — labels, metrics, times, eyebrow
+                    (UPPERCASE, letter-spacing +6%)
+   Scale baseline: 1280×720 slide.
+   ============================================================ */
+
+:root {
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* weights */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium:  500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:    700; /* @kind font */
+
+  /* type scale (px @ 1280×720) */
+  --fs-title:    80px;  /* cover / closing title       */
+  --fs-header:   44px;  /* slide header                */
+  --fs-subtitle: 28px;  /* subtitle / lead             */
+  --fs-body:     22px;  /* body (min 20px)             */
+  --fs-body-min: 20px;
+  --fs-metric:  104px;  /* big metric                  */
+  --fs-label:    15px;  /* mono labels / eyebrow       */
+
+  /* line-heights */
+  --lh-display: 1.08;   /* @kind other */
+  --lh-tight:   1.05; /* @kind other */
+  --lh-body:    1.4; /* @kind other */
+
+  /* eyebrow tracking (+6%) */
+  --tracking-eyebrow: 0.06em;
+  --tracking-mono:    0.02em;
+}
+
+/* --- helper classes ----------------------------------------- */
+.zf-eyebrow {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-label);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.zf-mono {
+  font-family: var(--font-mono);
+  letter-spacing: var(--tracking-mono);
+}
+.zf-title {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-title);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+.zf-header {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-header);
+  line-height: var(--lh-display);
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+.zf-subtitle {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-subtitle);
+  line-height: 1.25;
+  color: var(--text-muted);
+}
+.zf-body {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--text-primary);
+}
+.zf-metric {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-metric);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--brand);
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,61 @@
+/* ============================================================
+   COLORS — „Zielona fala"
+   Brand color = ultramarine (= digital twin / AI).
+   RESERVED WORDS: red/yellow/green carry hard meaning in traffic
+   engineering. Use them ONLY in literal signal-phase diagrams.
+   Never decoratively.
+   ============================================================ */
+
+:root {
+  /* --- Light theme (default) --------------------------------- */
+  --zf-bg:              #ECEFF2;  /* page background          */
+  --zf-panel:           #FFFFFF;  /* cards, panels            */
+  --zf-text:            #16212E;  /* primary text             */
+  --zf-text-secondary:  #5A6675;  /* secondary text           */
+  --zf-accent:          #2A43D0;  /* brand ultramarine        */
+  --zf-accent-fill:     #DDE2FA;  /* tint of brand accent     */
+  --zf-ground-truth:    #3E6E96;  /* measured "ground truth" data */
+
+  /* --- Neutrals (diagram strokes, dividers) ------------------ */
+  --zf-neutral-1:       #C3C9D1;  /* lightest — future/idle   */
+  --zf-neutral-2:       #8B95A1;  /* mid                      */
+  --zf-neutral-3:       #4B5563;  /* darkest — node outlines  */
+
+  /* --- RESERVED: signal phases ONLY -------------------------- */
+  --zf-signal-red:      #DD3B36;
+  --zf-signal-yellow:   #E3A11C;
+  --zf-signal-green:    #1FA85A;
+
+  /* --- Semantic aliases (light) ------------------------------ */
+  --surface-page:       var(--zf-bg);
+  --surface-card:       var(--zf-panel);
+  --text-primary:       var(--zf-text);
+  --text-muted:         var(--zf-text-secondary);
+  --brand:              var(--zf-accent);
+  --brand-fill:         var(--zf-accent-fill);
+  --data-truth:         var(--zf-ground-truth);
+  --stroke-node:        var(--zf-neutral-3);
+  --stroke-idle:        var(--zf-neutral-1);
+  --divider:            var(--zf-neutral-1);
+}
+
+/* --- Dark theme (title / SOTA-gap / closing slides) ---------- */
+:root[data-theme="dark"],
+.zf-dark {
+  --zf-bg:              #121A26;  /* not pure black           */
+  --zf-panel:           #1B2735;
+  --zf-text:            #EAEEF3;
+  --zf-text-secondary:  #9AA6B4;
+  --zf-accent:          #6E83FF;  /* brighter ultramarine on dark */
+  --zf-accent-fill:     #28324C;
+
+  --surface-page:       var(--zf-bg);
+  --surface-card:       var(--zf-panel);
+  --text-primary:       var(--zf-text);
+  --text-muted:         var(--zf-text-secondary);
+  --brand:              var(--zf-accent);
+  --brand-fill:         var(--zf-accent-fill);
+  --stroke-node:        var(--zf-neutral-2);
+  --stroke-idle:        var(--zf-neutral-3);
+  --divider:            #2A3848;
+}

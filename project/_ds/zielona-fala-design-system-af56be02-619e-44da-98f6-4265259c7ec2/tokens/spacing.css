@@ -1,0 +1,38 @@
+/* ============================================================
+   SPACING & LAYOUT
+   Format 16:9. Baseline grid = 8px. 12-column grid.
+   Margin 64px · projector safe zone 88px from edge.
+   ============================================================ */
+
+:root {
+  /* 8px baseline scale */
+  --sp-1:  8px;
+  --sp-2:  16px;
+  --sp-3:  24px;
+  --sp-4:  32px;
+  --sp-5:  40px;
+  --sp-6:  48px;
+  --sp-8:  64px;
+  --sp-11: 88px;
+
+  /* slide geometry (1280×720 base) */
+  --slide-w: 1280px;
+  --slide-h: 720px;
+  --slide-margin: 64px;      /* hard margin            */
+  --slide-safe:   88px;      /* overscan safe zone     */
+  --grid-cols: 12; /* @kind other */
+  --grid-gutter: 24px;
+
+  /* radii — restrained; engineering, not consumer-soft */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-pill: 999px;
+
+  /* strokes */
+  --stroke-diagram: 2px;     /* flat diagram line weight */
+  --stroke-icon: 1.75px;     /* icon stroke weight       */
+
+  /* signature progress bar */
+  --progress-segments: 10; /* @kind other */
+  --progress-h: 4px;
+}
